@@ -26,5 +26,7 @@ _wxPay.payError = function(){
 # 使用方法：
 * 在需要进行微信支付的 html，提供以上3个参数及方法
 * 引用这个js
-
+```html
+<script src="//cdn.kuanyes.com/weixin-pay-js-1.0.js"></script>
+```
 祝你成功~
