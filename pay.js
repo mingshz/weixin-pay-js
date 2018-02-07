@@ -3,13 +3,13 @@
  */
 function onBridgeReady() {
     WeixinJSBridge.invoke(
-        'getBrandWCPayRequest', weixinRequest,
+        'getBrandWCPayRequest', _wxPay.request,
         function (res) {
             console.log(res);
             if (res.err_msg == "get_brand_wcpay_request:ok") {
-                paySuccess();
+                _wxPay.paySuccess();
             } else {
-                payError();
+                _wxPay.payError();
             }
         }
     );
